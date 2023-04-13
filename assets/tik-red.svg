@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61" height="61" viewBox="0 0 61 61">
+  <defs>
+    <filter id="Elipse_317" x="0" y="0" width="61" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_13539" data-name="Grupo 13539" transform="translate(9.213 6.001)">
+    <g transform="matrix(1, 0, 0, 1, -9.21, -6)" filter="url(#Elipse_317)">
+      <circle id="Elipse_317-2" data-name="Elipse 317" cx="21.5" cy="21.5" r="21.5" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <path id="Icon_simple-tiktok" data-name="Icon simple-tiktok" d="M15.484.024C17.053,0,18.61.012,20.167,0a7.46,7.46,0,0,0,2.1,4.994,8.446,8.446,0,0,0,5.078,2.144v4.827a12.819,12.819,0,0,1-5.03-1.162,14.8,14.8,0,0,1-1.94-1.114c-.012,3.5.012,6.994-.024,10.479a9.148,9.148,0,0,1-1.617,4.719,8.923,8.923,0,0,1-7.078,3.844A8.733,8.733,0,0,1,6.765,27.5,9.031,9.031,0,0,1,2.394,20.66c-.024-.6-.036-1.2-.012-1.785a9.016,9.016,0,0,1,10.456-8c.024,1.773-.048,3.545-.048,5.318a4.109,4.109,0,0,0-5.246,2.539,4.751,4.751,0,0,0-.168,1.928A4.076,4.076,0,0,0,11.568,24.1a4.024,4.024,0,0,0,3.318-1.928,2.763,2.763,0,0,0,.491-1.27c.12-2.144.072-4.276.084-6.419.012-4.827-.012-9.641.024-14.456Z" transform="translate(6.932 7.169)" fill="#039"/>
+  </g>
+</svg>

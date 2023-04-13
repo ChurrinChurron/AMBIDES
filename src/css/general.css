@@ -1,0 +1,1069 @@
+@font-face {
+    font-family: GorditaBold;
+    src: url(../font/Gordita\ Bold.woff);
+}
+
+@font-face {
+    font-family: GorditaMedium;
+    src: url(../font/Gordita\ Medium.woff);
+}
+
+@font-face {
+    font-family: GorditaRegular;
+    src: url(../font/Gordita\ Regular.woff);
+}
+
+@font-face {
+    font-family: GorditaLight;
+    src: url(../font/Gordita\ Light.woff);
+}
+
+:root {
+
+    /*TIPOGRAFIAS*/
+
+    --bold: "GorditaBold", sans-serif;
+    --medium: "GorditaMedium", sans-serif;
+    --regular: "GorditaRegular", sans-serif;
+    --light: "GorditaLight", sans-serif;
+    
+    /*COLORES*/
+
+    --blanco: hsl(0, 0%, 100%);
+    --blanco-perla: hsl(0, 0%, 95%);
+    --blanco-gris: hsl(0, 0%, 91%);
+    --gris-claro: hsl(0, 0%, 70%);
+    --gris: hsl(0, 0%, 55%);
+    --gris-oscuro: hsl(0, 0%, 44%);
+    --negro-claro: hsl(233, 7%, 26%);
+    --negro: hsl(0, 0%, 0%);
+    --negro-op: hsla(0, 0%, 0%, 0.65);
+    --rojo: hsl(0, 79%, 54%);
+    --carmin: hsl(6, 100%, 41%);
+    --amarillo: hsl(51, 100%, 50%);
+    --verde-claro: hsl(89, 58%, 56%);
+    --verde: hsl(147, 100%, 35%);
+    --verde-op: hsla(147, 100%, 35%, 0.5);
+    --verde-oscuro: hsl(147, 100%, 24%);
+    --azul-op: hsla(205, 100%, 38%, 0.150);
+    --azul: hsl(205, 100%, 38%);
+    --azul-rey: hsl(220, 100%, 30%);
+    --aquamarin: hsl(189, 100%, 29%);
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+
+    min-height: 100vh;
+    font-family: var(--regular);
+}
+
+/*OCULTAR EN MOVIL*/
+
+.links__desktop, .linkModal, .modal {
+
+    display: none;
+}
+
+/*WHATSAPP*/
+
+.whatsapp {
+
+    position: fixed;
+    bottom: 1em;
+    right: 1.1em;
+}
+
+.whatsapp img {
+
+    width: 4em;
+}
+
+/*HEADER Y NAV*/
+
+header {
+
+    position: relative;
+    background: url(../../assets/header-main.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5.8em;
+    padding: 4em 0;
+    color: var(--blanco);
+}
+
+header p, header a {
+
+    text-align: center;
+    font-size: 0.950em;
+    font-family: var(--light);
+}
+
+header p span {
+
+    color: var(--verde-claro);
+}
+
+header h2 {
+
+    text-align: center;
+    padding-top: 2em;
+    font-size: 2em;
+    font-family: var(--medium);
+}
+
+header a {
+
+    display: block;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+nav {
+
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+    padding: 1em;
+    box-shadow: 0 0 3px 2px var(--blanco-gris);
+    background-color: var(--blanco);
+}
+
+nav h1 img {
+
+    width: 5.4em;
+}
+
+.boton__movil {
+
+    outline: none;
+    border: none;
+    margin-top: 0.5em;
+    background-color: transparent;
+    font-size: 1.8em;
+    color: var(--verde);
+}
+
+.menu__movil {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    padding: 1.4em 2em;
+    z-index: 2;
+    background-color: var(--verde);
+    color: var(--blanco);
+    transition: .4s;
+}
+
+.menu__movil.ocultar {
+
+    transform: translateX(100%);
+}
+
+.boton__movil--cerrar {
+
+    text-align: end;
+    font-size: 2.3em;
+    color: var(--blanco);
+}
+
+.movil__conten {
+
+    padding-top: 4em;
+    text-align: center;
+}
+
+#busquedaMovil {
+
+    position: relative;
+    max-width: 21em;
+    margin: 0 auto 2.5em auto;
+}
+
+#busquedaMovil input {
+
+    outline: none;
+    width: 100%;
+    border: 1px solid var(--verde-oscuro);
+    border-radius: 4px;
+    padding: 0.7em 5.5em 0.7em 1.1em;
+    font-family: var(--regular);
+    font-size: 0.770em;
+    color: var(--gris-oscuro);
+}
+
+#busquedaMovil button {
+
+    position: absolute;
+    right: 0;
+    border: none;
+    outline: none;
+    padding: 0.560em 1em;
+    border-radius: 0 4px 4px 0;
+    font-size: 1em;
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+.movil__conten a, .movil__conten p {
+
+    display: block;
+    margin-bottom: 1.2em;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--medium);
+    color: var(--blanco);
+}
+
+.links__servicios__movil {
+
+    display: none;
+}
+
+.links__servicios__movil.abrir {
+
+    display: block;
+    font-size: 0.880em;
+}
+
+.idioma__opcion {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    font-size: 0.950em;
+}
+
+.idioma__opcion a {
+
+    font-family: var(--regular);
+}
+
+.idiom.activo {
+
+    color: var(--verde-oscuro);
+    font-family: var(--medium);
+    border-bottom: 2px solid var(--verde-oscuro);
+}
+
+/*--BROCHURE--*/
+
+.brochure {
+
+    padding: 6em 1.4em;
+}
+
+.brochure__texto h3 {
+
+    text-align: center;
+    font-size: 1.6em;
+    font-family: var(--medium);
+    color: var(--verde);
+}
+
+.brochure__texto p {
+
+    position: relative;
+    margin-top: 1.6em;
+    text-align: center;
+    font-size: 0.960em;
+}
+
+.brochure__texto p::after {
+
+    content: "";
+    position: absolute;
+    display: block;
+    top: 2.4em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 11em;
+    height: 0.1em;
+    background-color: var(--verde);
+}
+
+.brochure__texto a {
+
+    display: block;
+    width: 15em;
+    margin: 4.8em auto 0 auto;
+    padding: 0.6em 1.6em 0.6em 1.6em;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9em;
+    background-color: var(--verde);
+    color: var(--blanco);
+    transition: .4s;
+}
+
+.brochure__texto a:hover {
+
+    background-color: var(--verde-claro);
+}
+
+.brochure__texto a i {
+
+    margin-left: 0.8em;
+}
+
+.brochure img {
+
+    width: 100%;
+    margin: 5em auto 0 auto;
+    max-width: 38em;
+    display: block;
+}
+
+/*DUDAS CONTACTO*/
+
+.dudasContac {
+
+    padding: 3em 1.4em 0 1.4em;
+    background: rgb(0,179,80);
+    background: linear-gradient(180deg, rgba(0,179,80,0.08307072829131656) 62%, rgba(255,255,255,0) 72%);
+}
+
+.dudasContac__texto h3 {
+
+    text-align: center;
+    font-size: 1.6em;
+    font-family: var(--medium);
+    color: var(--verde);
+}
+
+.dudasContac__texto p {
+
+    margin-top: 1.6em;
+    text-align: center;
+    font-size: 0.960em;
+}
+
+.dudasContac__texto a {
+
+    display: block;
+    width: 15em;
+    margin: 4.2em auto 0 auto;
+    padding: 0.6em 1.6em 0.6em 1.6em;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9em;
+    border: 1px solid var(--verde);
+    background-color: transparent;
+    color: var(--verde);
+    transition: .4s;
+}
+
+.dudasContac__texto a:hover {
+
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+
+.dudasContac__texto a i {
+
+    margin-left: 0.8em;
+}
+
+.dudasContac img {
+
+    width: 100%;
+    margin: 5em auto 0 auto;
+    max-width: 38em;
+    display: block;
+}
+
+/*FOOTER*/
+
+footer {
+
+    background: url(../../assets/fondo-footer-movil.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 3em 24em 3em;
+}
+
+.footer__conten {
+
+    position: relative;
+    top: 19em;
+}
+
+.footer__datos, .footer__links, .footer__redes {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.footer__linea {
+
+    display: none;
+}
+
+.datos__ubic {
+
+    margin-top: 3em;
+}
+
+.ubic__info {
+
+    margin-bottom: 3em;
+}
+
+.ubic__info > img {
+
+    margin-bottom: 0.5em;
+    width: 2.3em;
+}
+
+.info__conten {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0.9em 0;
+    font-size: 0.880em;
+}
+
+.info__conten img {
+
+    margin-right: 1em;
+    width: 1.1em;
+}
+
+#telFooter {
+
+    margin-right: 0;
+    width: 1.2em;
+}
+
+.footer__links {
+
+    margin: 0.5em 0 1.4em 0;
+}
+
+.footer__links h3, .footer__redes h3 {
+
+    font-size: 1em;
+    margin-bottom: 1.2em;
+}
+
+.links__gen a {
+
+    display: block;
+    text-decoration: none;
+    margin: 0.8em 0;
+    font-size: 0.9em;
+    color: var(--blanco);
+}
+
+.redes__links {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.redes__links a img {
+
+    width: 3.6em;
+}
+
+@media screen and (min-width: 768px) {
+    
+    /*MODAL Y REDES*/
+
+    .modal {
+
+        display: grid;
+        place-items: center;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--negro-op);
+        visibility: visible;
+        opacity: 1;
+        transition: .4s;
+    }
+
+    .modal.cerrar {
+
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .modal__conten {
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .modal__conten img {
+
+        width: 70%;
+        border-radius: 1.2em;
+    }
+
+    .modal__conten span {
+
+        border-radius: 50%;
+        padding: 0.010em 0.360em;
+        cursor: pointer;
+        position: relative;
+        bottom: 1em;
+        font-size: 1.3em;
+        color: var(--negro);
+        background-color: var(--blanco);
+    }
+
+    .linkModal {
+
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 8.4em;
+        right: 0;
+    }
+
+    #modalLogo {
+
+        position: relative;
+        width: 11em;
+        left: 5em;
+        cursor: pointer;
+        transition: .4s;
+    }
+
+    #modalLogo:hover {
+
+        left: 3em;
+    }
+
+    .linkModal a {
+
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        left: 6em;
+        text-decoration: none;
+        font-size: 1.3em;
+        transition: .4s;
+    }
+
+    .linkModal a:hover {
+
+        left: 0;
+    }
+
+    .linkModal a img {
+
+        width: 2.3em;
+        position: relative;
+        left: 1em;
+        top: 0.1em;
+    }
+
+    .linkModal a span {
+
+        width: 15em;
+        padding: 0.8em 0.5em 0.8em 3em;
+        margin-top: 0.7em;
+        font-size: 0.5em;
+        background-color: var(--blanco);
+        color: var(--negro);
+        font-family: var(--light);
+        opacity: 0;
+        visibility: hidden;
+        transition: .1s;
+    }
+
+    .linkModal a:hover span {
+
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    .links__desktop {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .boton__movil {
+
+        display: none;
+    }
+
+    header {
+
+        margin-top: 6.5em;
+        padding: 5em 0;
+    }
+    
+    header h2 {
+    
+        text-align: left;
+        padding: 1em 0 0 3.3em;
+        font-size: 2.4em;
+    }
+
+    header > p, header > a {
+    
+        text-align: left;
+        font-size: 0.880em;
+        padding-left: 9em;
+    }
+
+    nav {
+    
+        justify-content: space-around;
+        padding: 1em 0 0 0;
+    }
+
+    nav h1 img {
+
+        width: 7em;
+    }
+
+    #busquedaDesktop {
+
+        position: relative;
+        width: 28em;
+    }
+    
+    #busquedaDesktop input {
+    
+        outline: none;
+        width: 100%;
+        border: 1px solid var(--verde);
+        border-radius: 4px;
+        padding: 0.6em 5.4em 0.6em 1.1em;
+        font-family: var(--regular);
+        font-size: 0.770em;
+        color: var(--gris-oscuro);
+    }
+
+    #busquedaDesktop input::placeholder {
+
+        color: var(--gris-claro);
+    }
+    
+    #busquedaDesktop button {
+    
+        position: absolute;
+        right: 0;
+        border: none;
+        outline: none;
+        padding: 0.540em 1.6em;
+        border-radius: 0 4px 4px 0;
+        font-size: 1em;
+        background-color: var(--verde);
+        color: var(--blanco);
+        cursor: pointer;
+    }
+
+    .links__desktopLista {
+
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+    }
+
+    .links__desktopLista > a, .links__desktopLista > p {
+
+        font-size: 0.850em;
+        margin-right: 2em;
+        text-decoration: none;
+        padding-bottom: 0.6em;
+        border-bottom: 3px solid transparent;
+        font-family: var(--regular);
+        color: var(--azul-rey);
+        cursor: pointer;
+        transition: .4s;
+    }
+
+    .links__desktopLista a:hover, .links__desktopLista p:hover {
+
+        color: var(--verde-claro);
+        border-bottom: 3px solid var(--verde-claro);
+    }
+
+    .links__servicios {
+
+        position: absolute;
+        top: 5em;
+        left: 5.4em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1em 1em 0.6em 1em;
+        font-size: 0.780em;
+        border-radius: 0 0 3px 3px;
+        box-shadow: 0 0 2px 2px var(--blanco-gris);
+        background-color: var(--blanco);
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+    }
+
+    #linkServicios:hover + .links__servicios, .links__servicios:hover {
+
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .links__servicios a {
+
+        margin: 0 0 0.6em 0;
+        border-bottom: 1px solid var(--blanco-gris);
+        transition: .4s;
+    }
+
+    .links__servicios a:hover {
+
+        color: var(--verde-claro);
+        border-bottom: 1px solid var(--blanco-gris);
+    }
+
+    .idioma__opcion {
+
+        padding-bottom: 0.3em;
+        font-size: 0.8em;
+        border-bottom: 3px solid transparent;
+        transition: .4s;
+    }
+
+    .idioma__opcion:hover {
+
+        border-bottom: 3px solid var(--azul-rey);
+    }
+    
+    .idioma__opcion a {
+    
+        color: var(--verde-op);
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        font-family: var(--regular);
+        margin: 0;
+        padding-bottom: 0em;
+    }
+
+    .idioma__opcion a:hover {
+
+        border-bottom: 2px solid var(--verde-op);
+    }
+
+    .idioma__opcion span {
+
+        color: var(--verde-op);
+    }
+    
+    .idiom.activo {
+    
+        color: var(--verde);
+        border-bottom: 2px solid var(--verde);
+        font-family: var(--medium);
+    }
+
+    .idiom.activo:hover {
+
+        color: var(--verde);
+        border-bottom: 2px solid var(--verde);
+    }
+
+    /*--BROCHURE--*/
+
+    .brochure {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 6em 1.4em;
+    }
+
+    .brochure__texto h3 {
+
+        text-align: left;
+        font-size: 2.2em;
+    }
+
+    .brochure__texto p {
+
+        text-align: left;
+        font-size: 0.980em;
+    }
+
+    .brochure__texto p::after {
+
+        top: 2.8em;
+        left: 38%;
+        width: 15em;
+        height: 0.120em;
+    }
+
+    .brochure__texto a {
+
+        display: block;
+        width: 15em;
+        margin: 4.8em 0 0 0;
+        font-size: 0.940em;
+    }
+
+    .brochure img {
+
+        margin: 0;
+        max-width: 34em;
+    }
+
+    /*DUDAS CONTACTO*/
+
+    .dudasContac {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 0 3.5em;
+    }
+
+    .dudasContac__texto {
+
+        margin-top: 3em;
+    }
+
+    .dudasContac__texto h3 {
+
+        text-align: left;
+        font-size: 2.3em;
+    }
+
+    .dudasContac__texto p {
+
+        margin-top: 1.6em;
+        text-align: left;
+        font-size: 1.1em;
+    }
+
+    .dudasContac__texto a {
+
+        margin: 4.2em 0 0 0;
+        font-size: 0.960em;
+    }
+
+    .dudasContac img {
+
+        margin: 0;
+        max-width: 39em;
+    }
+
+    /*FOOTER*/
+
+    footer {
+
+        background: url(../../assets/fondo-footer.webp) no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 0 3em 24em 3em;
+    }
+    
+    .footer__conten {
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 19em;
+    }
+    
+    .footer__datos, .footer__links, .footer__redes {
+    
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer__redes {
+
+        margin-bottom: 5.5em;
+    }
+
+    .footer__linea {
+
+        display: block;
+        height: 15em;
+        margin: 3em 0 0 2em;
+        opacity: 0.3;
+    }
+
+    #logoFooter {
+
+        width: 18em;
+    }
+    
+    .datos__ubic {
+    
+        display: flex;
+        margin-top: 3em;
+    }
+    
+    .ubic__info {
+    
+        margin-bottom: 3em;
+    }
+
+    .ubic__info:first-child {
+
+        margin-right: 3em;
+    }
+    
+    .ubic__info > img {
+    
+        width: 2em;
+    }
+    
+    .info__conten {
+    
+        justify-content: flex-start;
+        margin: 1.2em 0;
+        font-size: 0.740em;
+        font-family: var(--light);
+    }
+    
+    .info__conten img {
+    
+        margin-right: 1em;
+        width: 1.1em;
+    }
+    
+    #telFooter {
+    
+        margin-right: 1em;
+        width: 1.2em;
+    }
+    
+    .footer__links {
+    
+        margin: 0.5em 2.8em 1.4em 2.8em;
+    }
+    
+    .footer__links h3, .footer__redes h3 {
+    
+        font-size: 0.760em;
+        margin-bottom: 1.2em;
+        font-family: var(--light);
+    }
+
+    .links__gen {
+
+        display: flex;
+    }
+
+    .links__uno {
+
+        margin-right: 2.2em;
+    }
+    
+    .links__gen a {
+    
+        font-size: 0.720em;
+        margin: 1.1em 0;
+        transition: .4s;
+    }
+
+    .links__gen a:hover {
+
+        color: var(--verde-claro);
+    }
+    
+    .redes__links a img {
+    
+        width: 3em;
+    } 
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .footer__redes {
+
+        margin-bottom: 5.8em;
+    }
+    
+    .info__conten {
+
+        font-size: 0.8em;
+    }
+
+    .ubic__info:first-child {
+
+        margin-right: 4.2em;
+    }
+
+    .footer__linea {
+
+        margin: 3em 0 0 3.6em;
+    }
+
+    .footer__links {
+
+        margin: 0.5em 3.8em 1.4em 3.2em;
+    }
+
+    .links__gen a {
+
+        font-size: 0.780em;
+    }
+
+    .links__uno {
+
+        margin-right: 4.4em;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    
+    /*DUDAS CONTACTO*/
+
+    .dudasContac {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 0 11vw;
+    }
+    
+    .dudasContac img {
+
+        margin: 0;
+        max-width: 43em;
+    }
+}
