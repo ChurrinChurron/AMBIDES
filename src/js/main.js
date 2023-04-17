@@ -7,7 +7,6 @@ let abrirModal = document.querySelector("#modalLogo");
 let modal = document.querySelector(".modal");
 let cerrarModal = document.querySelector("#cerrarModal");
 let opcionesPais = document.querySelectorAll(".opc__pais");
-let filtroCiudad = document.querySelectorAll(".filtro__ciudad");
 
 /*FUNCION MENU MOVIL*/
 
@@ -42,3 +41,10 @@ cerrarModal.addEventListener("click", () => {
 
 /*FUNCION FILTRO LISTA*/
 
+for(let opc of opcionesPais) {
+
+    opc.addEventListener("click", () => {
+
+        opc.classList.toggle("active");
+    })
+}

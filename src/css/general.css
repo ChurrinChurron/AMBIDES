@@ -404,8 +404,8 @@ nav h1 img {
 .memoria {
 
     padding: 3em 1.4em 0 1.4em;
-    background: rgb(0,179,80);
-    background: linear-gradient(265deg, rgba(0,179,80,0.08307072829131656) 62%, rgba(255,255,255,0) 72%);
+    background: rgb(145,208,78);
+    background: linear-gradient(270deg, rgba(145,208,78,0.4192051820728291) 52%, rgba(255,255,255,0) 93%);
 }
 
 .memoria__texto h3 {
@@ -446,8 +446,7 @@ nav h1 img {
 
 .memoria__texto a:hover {
 
-    background-color: var(--blanco);
-    color: var(--verde);
+    background-color: var(--verde-claro);
 }
 
 .memoria__texto a i {
@@ -964,7 +963,7 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 0 0 3.5em;
+        padding: 0 0 0 6vw;
     }
 
     .memoria__texto {
