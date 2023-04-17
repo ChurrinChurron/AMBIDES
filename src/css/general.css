@@ -30,9 +30,11 @@
     /*COLORES*/
 
     --blanco: hsl(0, 0%, 100%);
+    --blanco-op: hsla(0, 0%, 100%, 0.9);
     --blanco-perla: hsl(0, 0%, 95%);
     --blanco-gris: hsl(0, 0%, 91%);
     --gris-claro: hsl(0, 0%, 70%);
+    --gris-op: hsla(0, 0%, 55%, 0.2);
     --gris: hsl(0, 0%, 55%);
     --gris-oscuro: hsl(0, 0%, 44%);
     --negro-claro: hsl(233, 7%, 26%);
@@ -41,6 +43,7 @@
     --rojo: hsl(0, 79%, 54%);
     --carmin: hsl(6, 100%, 41%);
     --amarillo: hsl(51, 100%, 50%);
+    --verde-cl-op: hsla(89, 58%, 56%, 0.120);
     --verde-claro: hsl(89, 58%, 56%);
     --verde: hsl(147, 100%, 35%);
     --verde-op: hsla(147, 100%, 35%, 0.5);
@@ -207,6 +210,7 @@ nav h1 img {
     width: 100%;
     border: 1px solid var(--verde-oscuro);
     border-radius: 4px;
+    margin: 0;
     padding: 0.7em 5.5em 0.7em 1.1em;
     font-family: var(--regular);
     font-size: 0.770em;
@@ -388,6 +392,70 @@ nav h1 img {
 }
 
 .dudasContac img {
+
+    width: 100%;
+    margin: 5em auto 0 auto;
+    max-width: 38em;
+    display: block;
+}
+
+/*MEMORIA*/
+
+.memoria {
+
+    padding: 3em 1.4em 0 1.4em;
+    background: rgb(0,179,80);
+    background: linear-gradient(265deg, rgba(0,179,80,0.08307072829131656) 62%, rgba(255,255,255,0) 72%);
+}
+
+.memoria__texto h3 {
+
+    position: relative;
+    text-align: center;
+    font-size: 1.6em;
+    font-family: var(--medium);
+    color: var(--verde);
+}
+
+.memoria__texto h3::after {
+
+    content: "";
+    position: absolute;
+    display: block;
+    top: 3.2em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5.5em;
+    height: 0.060em;
+    background-color: var(--verde-claro);
+}
+
+.memoria__texto a {
+
+    display: block;
+    width: 15em;
+    margin: 4.2em auto 0 auto;
+    padding: 0.6em 1.6em 0.6em 1.6em;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9em;
+    background-color: var(--verde);
+    color: var(--blanco);
+    transition: .4s;
+}
+
+.memoria__texto a:hover {
+
+    background-color: var(--blanco);
+    color: var(--verde);
+}
+
+.memoria__texto a i {
+
+    margin-left: 0.8em;
+}
+
+.memoria img {
 
     width: 100%;
     margin: 5em auto 0 auto;
@@ -723,13 +791,13 @@ footer {
     .links__servicios {
 
         position: absolute;
-        top: 5em;
-        left: 5.4em;
+        top: 4.7em;
+        left: 5.9em;
         display: flex;
         flex-direction: column;
         text-align: center;
         padding: 1em 1em 0.6em 1em;
-        font-size: 0.780em;
+        font-size: 0.720em;
         border-radius: 0 0 3px 3px;
         box-shadow: 0 0 2px 2px var(--blanco-gris);
         background-color: var(--blanco);
@@ -747,6 +815,8 @@ footer {
     .links__servicios a {
 
         margin: 0 0 0.6em 0;
+        padding-bottom: 0.4em;
+        color: var(--azul-rey);
         border-bottom: 1px solid var(--blanco-gris);
         transition: .4s;
     }
@@ -885,6 +955,46 @@ footer {
 
         margin: 0;
         max-width: 39em;
+    }
+
+    /*MEMORIA*/
+
+    .memoria {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 0 3.5em;
+    }
+
+    .memoria__texto {
+
+        margin-top: 1em;
+    }
+
+    .memoria__texto h3 {
+
+        text-align: left;
+        font-size: 2em;
+    }
+
+    .memoria__texto h3::after {
+
+        left: 65%;
+        transform: translateX(-100%);
+        width: 7em;
+    }
+
+    .memoria__texto a {
+
+        margin: 4em 0 0 0;
+        font-size: 0.9em;
+    }
+
+    .memoria img {
+
+        margin: 0;
+        max-width: 35em;
     }
 
     /*FOOTER*/
@@ -1062,6 +1172,22 @@ footer {
     }
     
     .dudasContac img {
+
+        margin: 0;
+        max-width: 43em;
+    }
+
+    /*MEMORIA*/
+
+    .memoria {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 0 11vw;
+    }
+    
+    .memoria img {
 
         margin: 0;
         max-width: 43em;

@@ -1,0 +1,401 @@
+.contacto {
+
+    padding: 6em 1.4em;
+}
+
+/*CONTACTO INFO*/
+
+.contacto__info > img{
+
+    width: 75%;
+    max-width: 20em;
+    display: block;
+    margin: 0 auto;
+}
+
+.contacto__info > p {
+
+    margin-top: 2.4em;
+    text-align: center;
+    font-size: 0.880em;
+}
+
+.info__contacto {
+
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contac__info {
+
+    margin-bottom: 3em;
+}
+
+.contac__info > img {
+
+    margin-bottom: 0.5em;
+    width: 2.6em;
+}
+
+.contac__info a {
+
+    display: block;
+    width: 15em;
+    margin: 2.5em auto 0 auto;
+    padding: 0.6em 1.6em 0.6em 1.6em;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9em;
+    background-color: var(--gris);
+    color: var(--blanco);
+    transition: .4s;
+}
+
+#iconoWaze {
+
+    font-size: 1.850em;
+    margin-right: 0.1em;
+}
+
+#iconoFlecha {
+
+    font-size: 1.2em;
+    margin-left: 0.4em;
+}
+
+.contac__info a:hover {
+
+    background-color: var(--negro);
+}
+
+.contac__conten {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0.9em 0;
+    font-size: 0.9em;
+}
+
+.contac__conten img {
+
+    margin-right: 1em;
+    width: 1.2em;
+}
+
+#telContac {
+
+    margin-right: 0;
+    width: 1.4em;
+}
+
+#telContacDos {
+
+    margin-right: 0.9em;
+    width: 1.4em;
+}
+
+#ubicContacDos {
+
+    margin: 0;
+}
+
+/*CONTACTO FORM*/
+
+.contacto__form {
+
+    margin: 4em auto 0 auto;
+    max-width: 26em;
+    padding: 2em;
+    border-top: 6px solid var(--blanco-gris);
+    box-shadow: 0 0 2px 2px var(--blanco-gris);
+}
+
+#formContac p {
+
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 0.860em;
+    color: var(--gris);
+}
+
+#formContac input, #formContac textarea {
+
+    outline: none;
+    width: 100%;
+    padding: 0.8em 1.5em;
+    border: 1px solid var(--blanco-gris);
+    margin: 0.3em 0;
+    font-size: 0.750em;
+    color: var(--gris-oscuro);
+    font-family: var(--regular);
+}
+
+textarea {
+
+    min-width: 100%;
+    max-width: 100%;
+    height: 8em;
+    resize: none;
+}
+
+#formContac input::placeholder, #formContac textarea::placeholder {
+
+    color: var(--gris);
+}
+
+#formContac input[type="submit"] {
+
+    font-size: 0.850em;
+    background-color: var(--gris);
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+/*MAPA*/
+
+.mapa {
+
+    padding: 3em 1.4em 0 1.4em;
+}
+
+.mapa img {
+
+    width: 100%;
+    max-width: 28em;
+    display: block;
+    margin: 0 auto;
+}
+
+/*----GRACIAS----*/
+
+#sinHeader {
+
+    background: none;
+    margin-top: 2.2em;
+    padding: 2em 0;
+}
+
+#fondoGracias {
+
+    background: url(../../assets/Gracias/fondo-gracias.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gracias {
+
+    padding: 5em 1.4em 0 1.4em;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.gracias h3 {
+
+    position: relative;
+    margin-bottom: 2.2em;
+    font-size: 1.7em;
+    font-family: var(--medium);
+}
+
+.gracias h3::after {
+
+    content: "";
+    position: absolute;
+    top: 3.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.5em;
+    height: 0.090em;
+    background-color: var(--verde);
+}
+
+#graciasInicio {
+
+    text-decoration: none;
+    display: block;
+    margin: 3.6em auto;
+    max-width: 16em;
+    padding: 0.7em 2em;
+    font-size: 0.920em;
+    border: 1px solid var(--blanco);
+    background-color: transparent;
+    color: var(--blanco);
+    cursor: pointer;
+    transition: .4s;
+}
+
+#graciasInicio i {
+
+    margin-left: 1.2em;
+}
+
+#graciasInicio:hover {
+
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+#linksGracias {
+
+    margin: 2.2em 0 0 0;
+    justify-content: center;
+}
+
+#linksGracias a img {
+
+    width: 4.1em;
+}
+
+@media screen and (min-width: 768px){
+    
+    .info__contacto {
+
+        flex-direction: row;
+        justify-content: center;
+        gap: 0 6em;
+    }
+
+    .mapa img {
+
+        max-width: 45em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    .contacto {
+
+        padding: 6em 3em 3em 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    /*CONTACTO INFO*/
+
+    .contacto__info > img{
+
+        max-width: 22em;
+        margin: 0;
+    }
+
+    .contacto__info > p {
+
+        margin-top: 2.6em;
+        text-align: left;
+        font-size: 0.960em;
+    }
+
+    .info__contacto {
+
+        margin-top: 3em;
+        align-items: center;
+        text-align: left;
+        gap: 0 4em;
+    }
+
+    .contac__info {
+
+        margin-bottom: 3em;
+    }
+
+    .contac__info a {
+
+        margin: 2.5em 0 0 0;
+        padding: 0.5em 1.6em 0.5em 1.6em;
+        font-size: 0.880em;
+    }
+
+    .contac__conten {
+
+        justify-content: flex-start;
+        margin: 1.3em 0;
+    }
+
+    .contac__conten img {
+
+        margin-right: 1em;
+        width: 1.2em;
+    }
+
+    #telContac {
+
+        margin-right: 1em;
+    }
+
+    #ubicContacDos {
+
+        margin-right: 1em;
+    }
+
+    /*CONTACTO FORM*/
+
+    .contacto__form {
+
+        margin: 3em 0 0 3em;
+        max-width: 28em;
+        padding: 2em 3em;
+    }
+
+    #formContac p {
+
+        text-align: left;
+        font-size: 0.880em;
+    }
+
+    /*MAPA*/
+
+    .mapa {
+
+        padding: 0 1.4em 6em 1.4em;
+    }
+
+    .mapa img {
+
+        max-width: 53em;
+    }
+
+    /*----GRACIAS----*/
+
+    .gracias {
+
+        padding: 8em 1.4em 0 1.4em;
+    }
+
+    #fondoGracias {
+
+        background-position: 50% 15%;
+        background-size: inherit;
+    }
+
+    #graciasInicio {
+        
+        max-width: 18em;
+        font-size: 0.960em;
+    }
+
+    #linksGracias a img {
+
+        width: 3.8em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .info__contacto {
+
+        gap: 0 7em;
+    }    
+    
+    /*CONTACTO FORM*/
+
+    .contacto__form {
+
+        margin: 3em 0 0 5.5em;
+        max-width: 30em;
+    }
+}

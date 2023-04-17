@@ -6,6 +6,8 @@ let listaMovil = document.querySelector(".links__servicios__movil");
 let abrirModal = document.querySelector("#modalLogo");
 let modal = document.querySelector(".modal");
 let cerrarModal = document.querySelector("#cerrarModal");
+let opcionesPais = document.querySelectorAll(".opc__pais");
+let filtroCiudad = document.querySelectorAll(".filtro__ciudad");
 
 /*FUNCION MENU MOVIL*/
 
@@ -37,3 +39,6 @@ cerrarModal.addEventListener("click", () => {
 
     modal.classList.add("cerrar");
 });
+
+/*FUNCION FILTRO LISTA*/
+

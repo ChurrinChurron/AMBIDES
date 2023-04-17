@@ -1,0 +1,571 @@
+#fondoBibliot {
+
+    background-color: var(--blanco-gris);
+}
+
+/*BIBLIOTECA GENERAL*/
+
+.biblioteca {
+
+    padding: 6em 0;
+    background-color: var(--blanco);
+}
+
+/*BIBLIOTECA BUSCADOR*/
+
+.bibliot__buscador {
+
+    width: 78%;
+    max-width: 25em;
+    margin: 0 auto;
+}
+
+#busquedaBibliot {
+
+    position: relative;
+    max-width: 25em;
+    margin: 0 auto 2.5em auto;
+}
+
+#busquedaBibliot input {
+
+    outline: none;
+    width: 100%;
+    border: 1px solid var(--gris-claro);
+    border-radius: 4px;
+    margin: 0;
+    padding: 0.7em 5.5em 0.7em 1.4em;
+    font-family: var(--regular);
+    font-size: 0.770em;
+    color: var(--verde-claro);
+}
+
+#busquedaBibliot input::placeholder {
+
+    color: var(--verde-claro);
+}
+
+#busquedaBibliot button {
+
+    position: absolute;
+    right: 0;
+    border: none;
+    outline: none;
+    padding: 0.560em 1em;
+    border-radius: 0 4px 4px 0;
+    font-size: 1em;
+    background-color: var(--gris-claro);
+    color: var(--azul-rey);
+    cursor: pointer;
+}
+
+/*BIBLIOTECA CONTENIDO*/
+
+/*BIBLIOTECA FILTRO*/
+
+.bibliot__filtro {
+
+    padding: 1.8em;
+}
+
+.bibliot__categ, .bibliot__fecha {
+
+    width: 90%;
+    padding: 1.5em;
+    max-width: 25em;
+    margin: 0.5em auto 2em auto;
+    border-top: 3px solid var(--gris-op);
+    border-bottom: 3px solid var(--gris-op);
+    background-color: var(--blanco-gris);
+}
+
+.bibliot__categ h3, .bibliot__fecha h3 {
+
+    margin-bottom: 0.5em;
+    padding-bottom: 0.8em;
+    border-bottom: 2px solid var(--gris-claro);
+    font-size: 0.940em;
+    text-align: center;
+    color: var(--negro);
+}
+
+.filtro__lista {
+
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="radio"] {
+
+    display: none;
+}
+
+.filtro__lista label {
+
+    padding: 0.650em;
+    background-color: transparent;
+    color: var(--gris);
+    border-bottom: 1px solid var(--gris-op);
+    font-size: 0.850em;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+input[type="radio"]:checked + label {
+
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
+}
+
+/*BIBLIOTECA LISTA*/
+
+.bibliot__lista {
+
+    margin-top: 3em;
+}
+
+.lista__conten {
+
+    width: 78%;
+    max-width: 25em;
+    margin: 0 auto;
+    border-top: 1px solid var(--gris-claro);
+}
+
+.conten__datos {
+    
+    padding: 1.2em 0.2em;
+    text-align: center;
+    border-bottom: 1px solid var(--gris-claro);
+}
+
+.conten__datos:nth-child(odd) {
+
+    background-color: var(--blanco-perla);    
+}
+
+.conten__datos img {
+
+    width: 2.9em;
+}
+
+.conten__datos h4 {
+
+    font-size: 0.9em;
+    margin-top: 0.6em;
+    color: var(--negro-claro);
+}
+
+.conten__datos time {
+
+    display: inline-block;
+    font-size: 0.820em;
+    margin-top: 0.8em;
+}
+
+.numero__desc {
+
+    margin: 0.8em 0;
+}
+
+.desc__pop {
+
+    display: inline-block;
+    padding: 0.3em 0.7em;
+    border-radius: 0.4em;
+    font-size: 0.680em;
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+
+.desc__cuenta {
+
+    margin-top: 0.6em;
+    font-size: 0.760em;
+}
+
+.conten__datos button {
+
+    border: none;
+    outline: none;
+    margin-top: 1em;
+    padding: 0.5em 1.2em 0.5em 1.2em;
+    text-align: center;
+    font-size: 0.880em;
+    background-color: var(--verde);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.conten__datos button i {
+
+    margin-left: 0.4em;
+}
+
+/*BIBLIOTECA NAVEGADOR*/
+
+.bibliot__nav {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.bibliot__nav a {
+
+    text-decoration: none;
+    font-size: 0.750em;
+    color: var(--gris);
+}
+
+.bibliot__nav a span {
+
+    color: var(--verde);
+    font-size: 1em;
+}
+
+.numeros__nav {
+
+    display: flex;
+    list-style: none;
+    margin-left: 1em;
+    font-size: 0.720em;
+    color: var(--gris);
+    border: 0.010em solid var(--blanco-gris);
+    border-radius: 3px;
+}
+
+.numeros__nav li {
+
+    margin: 0;
+    padding: 0.5em 0.6em;
+    cursor: pointer;
+    transition: .4s;
+    border: 1px solid var(--blanco-gris);
+}
+
+.nav__flechas {
+
+    color: var(--verde);
+}
+
+.numeros__nav li:hover, .navActivo {
+
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+
+/*DOCUMENTOS DE INTERES*/
+
+.interes {
+
+    padding: 4em 1.4em 0 1.4em;
+    background-color: var(--blanco-gris);
+}
+
+.interes h3 {
+
+    position: relative;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--verde);
+}
+
+.interes h3::after {
+
+    content: "";
+    position: absolute;
+    display: block;
+    top: 1.9em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5.5em;
+    height: 0.1em;
+    background-color: var(--gris-claro);
+}
+
+.splide {
+
+    margin-top: 6em;
+}
+
+.splide__pagination {
+
+    display: none;
+}
+
+.splide__arrow {
+
+    background: transparent;
+}
+
+.splide__arrow svg {
+
+    fill: var(--azul);
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.splide__slide {
+
+    width: 21.1em !important;
+}
+
+.caja {
+
+    display: flex;
+    width: 20em;
+    border-top: 4px solid var(--gris);
+    border-bottom: 4px solid var(--gris);
+    background-color: var(--blanco);
+}
+
+.caja__doc, .caja__fondo {
+
+    padding: 1.2em 1.2em 0.6em 1.2em;
+}
+
+.caja__doc {
+
+    max-width: 15em;
+}
+
+.caja__doc h4 {
+
+    font-size: 0.9em;
+    word-break: break-all;
+    color: var(--verde);
+}
+
+.caja__doc button {
+
+    border: none;
+    outline: none;
+    margin-top: 1.4em;
+    padding: 0.6em 1.2em 0.6em 1.2em;
+    text-align: center;
+    font-size: 0.880em;
+    background-color: var(--verde);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.caja__doc button i {
+
+    margin-left: 0.4em;
+}
+
+.caja__fondo {
+
+    display: flex;
+    align-items: end;
+    background-color: var(--gris);
+}
+
+.caja__fondo img {
+
+    width: 2.6em;
+}
+
+@media screen and (min-width: 992px) { 
+    
+    /*BIBLIOTECA BUSCADOR*/
+
+    .bibliot__buscador {
+
+        max-width: 50em;
+        margin: 0 0 0 auto;
+    }
+
+    #busquedaBibliot {
+
+        max-width: 53em;
+    }
+
+    #busquedaBibliot button {
+
+        padding: 0.580em 1.5em;
+        font-size: 1em;
+    }
+        
+    /*BIBLIOTECA CONTENIDO*/
+
+    .bibliot__caja {
+
+        width: 90%;
+        max-width: 73em;
+        margin: 0 auto;
+    }
+    
+    .bibliot__conten {
+
+        display: flex;
+        width: 100%;
+        max-width: 73em;
+        margin: 0 auto;
+        border-top: 3px solid var(--blanco-gris);
+        border-bottom: 3px solid var(--blanco-gris);
+    }
+
+    /*BIBLIOTECA FILTRO*/
+
+    .bibliot__filtro {
+
+        padding: 0;
+        width: 19em;
+    }
+
+    .bibliot__categ, .bibliot__fecha {
+
+        padding: 1.5em;
+        max-width: 30em;
+        height: 50%;
+        margin: 0;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .bibliot__fecha {
+
+        border-top: 2px solid var(--gris-op);
+    }
+
+    .bibliot__categ h3, .bibliot__fecha h3 {
+
+        border-bottom: 2px solid var(--gris-claro);
+        font-size: 1em;
+        text-align: left;
+        color: var(--negro);
+    }
+
+    .filtro__lista label {
+
+        font-size: 0.880em;
+        text-align: left;
+    }
+
+    /*BIBLIOTECA LISTA*/
+
+    .bibliot__lista {
+
+        margin: 3em 0 3em 1em;
+    }
+
+    .lista__conten {
+
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        border-top: 1px solid var(--gris-claro);
+    }
+
+    .conten__datos {
+        
+        display: flex;
+        align-items: center;
+        padding: 0.7em 0.3em;
+        text-align: left;
+    }
+
+    .conten__datos h4 {
+
+        width: 49.6%;
+        font-size: 0.9em;
+        margin: 0 0 0 1em;
+    }
+
+    .conten__datos time {
+
+        font-size: 0.8em;
+        height: 3em;
+        margin: 0 0.6em 0 0.6em;
+        padding: 0 1.2em;
+        text-align: center;
+        border-left: 1px solid var(--gris-claro);
+        border-right: 1px solid var(--gris-claro);
+    }
+
+    .numero__desc {
+
+        margin: 0 0.4em;
+        text-align: center;
+    }
+
+    .desc__pop {
+
+        font-size: 0.6em;
+    }
+
+    .desc__cuenta {
+
+        margin-top: 0.7em;
+        font-size: 0.7em;
+    }
+
+    .conten__datos button {
+
+        margin: 0 0 0 1.2em;
+        padding: 0.7em 0.3em 0.7em 0.3em;
+        font-size: 0.8em;
+        width: 8.5em;
+    }
+
+    /*NOTICIAS NAV*/
+
+    .noticias__nav {
+
+        margin-top: 3em;
+    }
+    
+    .noticias__nav a {
+    
+        font-size: 0.850em;
+    }
+    
+    .noticias__nav a span {
+    
+        font-size: 1.1em;
+    }
+    
+    .numeros__nav {
+    
+        margin-left: 2.4em;
+        font-size: 0.830em;
+    }
+    
+    .numeros__nav li {
+    
+        padding: 0.5em 0.8em;
+    }
+
+    /*SLIDER*/
+
+    .interes h3 {
+
+        text-align: left;
+        font-size: 1.5em;
+        padding-left: 3em;
+    }
+    
+    .interes h3::after {
+    
+        top: 2em;
+        left: 3.1em;
+        transform: translateX(0%);
+        height: 0.080em;
+    }
+
+    .splide {
+
+        margin: 6em 1.3em 10em 1.3em;
+    }
+
+    .splide__track {
+
+        margin: 0 4em;
+    }
+}
