@@ -176,7 +176,7 @@ input[type="radio"]:checked + label {
     padding: 1.2em;
     border-radius: 1em;
     background: rgb(0,179,80);
-background: linear-gradient(180deg, rgba(0,179,80,1) 22%, rgba(0,122,55,1) 100%);
+    background: linear-gradient(180deg, rgba(0,179,80,1) 22%, rgba(0,122,55,1) 100%);
 }
 
 .proyecto__datos img {
@@ -257,6 +257,13 @@ background: linear-gradient(180deg, rgba(0,179,80,1) 22%, rgba(0,122,55,1) 100%)
     background-size: cover;
 }
 
+#footerArtProy {
+
+    background: url(../../assets/fondo-footer-movil.webp), var(--verde-ms-oscuro) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /*TITULAR*/
 
 .titular {
@@ -296,7 +303,7 @@ background: linear-gradient(180deg, rgba(0,179,80,1) 22%, rgba(0,122,55,1) 100%)
 
 .datos__conten h4 {
 
-    padding: 0.5em;
+    padding: 0.2em 0.5em;
     font-size: 0.9em;
     background-color: var(--verde);
     color: var(--blanco);
@@ -304,7 +311,10 @@ background: linear-gradient(180deg, rgba(0,179,80,1) 22%, rgba(0,122,55,1) 100%)
 
 .datos__conten h4::before {
 
-    content: "";  /*----PENDIENTE CON ESTO----*/
+    content: "⬤";
+    font-size: 1.5em;
+    margin-right: 0.3em;
+    color: var(--blanco);
 }
 
 .datos__conten p {
@@ -428,6 +438,7 @@ background: linear-gradient(180deg, rgba(0,179,80,1) 22%, rgba(0,122,55,1) 100%)
 
     margin-top: 1.6em;
     font-size: 0.860em;
+    line-height: 1.6em;
     text-align: center;
 }
 
@@ -531,11 +542,19 @@ background: linear-gradient(180deg, rgba(0,179,80,1) 22%, rgba(0,122,55,1) 100%)
     transition: .4s;
 }
 
+.certif__descarga a i {
+
+    margin-left: 0.6em;
+}
+
 .certif__texto p {
 
     font-size: 0.8em;
+    line-height: 1.6em;
     text-align: center;
 }
+
+/*VIDEO*/
 
 .video {
 
@@ -572,10 +591,12 @@ background: linear-gradient(180deg, rgba(0,179,80,1) 22%, rgba(0,122,55,1) 100%)
     width: 4em;
 }
 
+/*OTROS PROYECTOS*/
+
 .otrosProy {
 
     padding: 6em 1.4em;
-    background-color: var(--verde-oscuro);
+    background-color: var(--verde-ms-oscuro);
 }
 
 .otrosProy h3 {
@@ -601,7 +622,33 @@ background: linear-gradient(180deg, rgba(0,179,80,1) 22%, rgba(0,122,55,1) 100%)
 
 .splide {
 
-    margin-top: 5em;
+    margin-top: 6em;
+}
+
+.splide__pagination {
+
+    display: none;
+}
+
+.splide__arrow {
+
+    opacity: 1;
+    width: 2.2em;
+    height: 2.2em;
+    background: var(--blanco);
+}
+
+.splide__arrow svg {
+
+    fill: var(--verde-claro);
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.splide__slide {
+
+    width: 21.1em !important;
+    margin: 0 0.5em;
 }
 
 .proyecto__datos--otros {
@@ -614,7 +661,7 @@ background: linear-gradient(180deg, rgba(0,179,80,1) 22%, rgba(0,122,55,1) 100%)
 
 .proyecto__datos--otros img {
 
-    height: 18em;
+    height: 16em;
     margin-right: 1em;
 }
 
@@ -765,11 +812,16 @@ background: linear-gradient(180deg, rgba(0,179,80,1) 22%, rgba(0,122,55,1) 100%)
 
     /*---ARTICULO PROYECTO----*/
 
+    #footerArtProy {
+
+        background: url(../../assets/fondo-footer.webp), var(--verde-ms-oscuro) no-repeat;
+    }
+
     /*TITULAR*/
 
     .titular {
 
-        padding: 8em 0;
+        padding: 3em 0 10em 0;
     }
 
     .titular h3 {
@@ -820,34 +872,202 @@ background: linear-gradient(180deg, rgba(0,179,80,1) 22%, rgba(0,122,55,1) 100%)
 
     .problema {
 
-        padding: 6em 1.4em;
+        padding: 6em 3em;
     }
 
     .problema__conten {
 
         display: flex;
         justify-content: center;
+        align-items: flex-start;
+        margin-top: 4.5em;
     }
 
     .problema__texto {
 
-        margin: 3em 0;
-        font-size: 0.9em;
-        line-height: 1.6em;
-        text-align: center;
-    }
-
-    .problema__texto:last-child {
-
-        margin-bottom: 0;
+        margin: 1em 0 0 0;
+        text-align: left;
+        width: 18em;
     }
 
     .problema__conten img {
 
-        width: 100%;
-        max-width: 28em;
-        display: block;
-        margin: 0 auto;
+        margin: 0 2em;
+    }
+
+    /*SOLUCION*/
+    
+    .solucion {
+
+        padding: 11em 1.4em 2em 1.4em;
+    }
+    
+    .solucion__conten {
+    
+        position: relative;
+    }
+    
+    .solucion__texto {
+    
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 19em;
+        z-index: 1;
+        padding: 2em;
+        max-width: 38em;
+        margin: 0;
+        background-color: var(--blanco);
+    }
+    
+    .solucion__texto h3 {
+    
+        font-size: 1.3em;
+    }
+    
+    .solucion__texto h3::after {
+
+        width: 4.4em;
+    }
+    
+    .solucion__texto p {
+    
+        margin-top: 1.7em;
+        font-size: 0.9em;
+        text-align: left;
+    }
+    
+    .solucion__texto a {
+    
+        padding: 0.7em 1.6em 0.7em 1.6em;
+        font-size: 0.8em;
+    }
+    
+    .solucion__galeria {
+
+        margin: 2em auto 0 auto;
+        max-width: 60em;
+    }
+
+    #btnIzq, #btnDer {
+
+        font-size: 1.6em;
+        bottom: 32%;
+        padding: 2.8em 2.5em;
+    }
+
+    .solucion__certif {
+
+        display: flex;
+        align-items: center;
+        max-width: 60em;
+        margin: 2.5em auto 0 auto;
+        padding: 1em 1.5em 1em 0;
+    }
+    
+    .certif__conten {
+    
+        flex-direction: row;
+        align-items: center;
+        padding-left: 2em;
+        width: 21em;
+    }
+    
+    .certif__conten img {
+    
+        width: 3.4em;
+        margin-right: 0.8em;
+    }
+    
+    .certif__conten h4 {
+    
+        font-size: 1.4em;
+    }
+    
+    .certif__descarga a {
+    
+        width: 13.8em;
+        margin: 1.6em 0 1.4em 3em;
+    }
+    
+    .certif__texto p {
+    
+        margin-left: 4em;
+        font-size: 0.9em;
+        text-align: left;
+    }
+
+    /*VIDEO*/
+
+    .video {
+
+        padding: 4em 1.4em 0 1.4em;
+    }
+
+    .video hr {
+
+        max-width: 40em;
+        height: 0.5em;
+    }
+
+    .video__conten {
+
+        max-width: 50em;
+        height: 26em;
+    }
+
+    .video__conten img {
+
+        width: 8em;
+    }
+
+    /*OTROS PROYECTOS*/
+
+    .otrosProy {
+
+        padding: 8em 1.4em 2em 1.4em;
+    }
+
+    .otrosProy h3 {
+
+        text-align: left;
+        font-size: 1.6em;
+        padding-left: 4em;
+    }
+        
+    .otrosProy h3::after {
+        
+        top: 2em;
+        left: 4.1em;
+        transform: translateX(0%);
+    }
+    
+    .splide {
+    
+        margin: 6em 1.3em 10em 1.3em;
+    }
+    
+    .splide__track {
+    
+        margin: 0 4em;
+    }
+
+    .splide__slide {
+
+        width: 26.1em !important;
+        margin: 0 0.8em;
+    }
+
+    .proyecto__datos--otros {
+
+        width: 28em;
+        margin: 1em 0;
+        font-size: 0.960em;
+    }
+    
+    .proyecto__datos--otros img {
+    
+        height: 15em;
     }
 }
 
@@ -868,6 +1088,11 @@ background: linear-gradient(180deg, rgba(0,179,80,1) 22%, rgba(0,122,55,1) 100%)
     .proyecto__datos img {
 
         height: 17em;
+    }
+
+    .proyecto__datos--otros img {
+    
+        height: 15em;
     }
 
     .proyecto__datos p {

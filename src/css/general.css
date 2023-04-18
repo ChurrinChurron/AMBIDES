@@ -42,12 +42,12 @@
     --negro-op: hsla(0, 0%, 0%, 0.65);
     --rojo: hsl(0, 79%, 54%);
     --carmin: hsl(6, 100%, 41%);
-    --amarillo: hsl(51, 100%, 50%);
     --verde-cl-op: hsla(89, 58%, 56%, 0.120);
     --verde-claro: hsl(89, 58%, 56%);
     --verde: hsl(147, 100%, 35%);
     --verde-op: hsla(147, 100%, 35%, 0.5);
     --verde-oscuro: hsl(147, 100%, 24%);
+    --verde-ms-oscuro: hsl(133, 88%, 19%);
     --azul-op: hsla(205, 100%, 38%, 0.150);
     --azul: hsl(205, 100%, 38%);
     --azul-rey: hsl(220, 100%, 30%);
