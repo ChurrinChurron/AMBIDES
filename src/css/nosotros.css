@@ -1,0 +1,604 @@
+/*QUIENES SOMOS*/
+
+.somos {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6em 1.4em;
+}
+
+.somos img {
+
+    width: 100%;
+    max-width: 30em;
+    margin-bottom: 2.5em;
+}
+
+.somos__conten {
+
+    background: url(../../assets/Somos/fondo-somos.webp) no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+/*NUESTRA HISTORIA*/
+
+.historia {
+
+    padding: 3em 1.4em 6em 1.4em;
+}
+
+.historia > h3 {
+
+    position: relative;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--verde);
+}
+
+.historia > h3::after {
+
+    content: "";
+    position: absolute;
+    display: block;
+    top: 1.9em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5.5em;
+    height: 0.090em;
+    background-color: var(--verde-claro);
+}
+
+.historia__conten {
+
+    position: relative;
+    margin: 5em auto 0 auto;
+    max-width: 32em;
+}
+
+.linea__circulo {
+
+    position: absolute;
+    top: -0.850em;
+    left: -0.320em;
+    font-size: 1.7em;
+    color: var(--verde);
+}
+
+.historia__conten::before {
+
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 0.4em;
+    background: var(--verde);
+}
+
+.historia__texto, .historia__img {
+
+    position: relative;
+    left: 1.6em;
+    top: 0.5em;
+}
+
+.historia__texto h3 {
+
+    margin-bottom: 0.2em;
+    font-family: var(--medium);
+    font-size: 1.6em;
+    color: var(--verde-claro);
+}
+
+.historia__texto p {
+
+    font-size: 0.840em;
+    line-height: 1.5em;
+    width: 90%;
+}
+
+.historia__img {
+
+    width: 90%;
+    border-radius: 1em;
+    margin: 2em 0;
+}
+
+/*MISION, VISION Y VALORES*/
+
+.valores {
+
+    padding: 6em 1.4em;
+    background: var(--azul-op);
+}
+
+.valores__misvis {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7em 0;
+}
+
+.mision, .vision {
+
+    position: relative;
+    padding: 5.5em 2em 2em 2em;
+    text-align: center;
+    background: var(--azul);
+    color: var(--blanco);
+}
+
+.mision img, .vision img {
+
+    position: absolute;
+    width: 6em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -3em;
+}
+
+.mision h3, .vision h3 {
+
+    margin-bottom: 0.8em;
+    font-size: 1.220em;
+    font-family: var(--medium);
+}
+
+.mision p, .vision p {
+
+    font-size: 0.880em;
+    line-height: 1.6em;
+}
+
+.valores__conten {
+
+    position: relative;
+    margin-top: 8em;
+    background-color: var(--verde-claro);
+}
+
+.valores__conten > img {
+
+    position: absolute;
+    width: 6em;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -3em;
+}
+
+.valores__conten h3 {
+
+    position: relative;
+    top: 4.6em;
+    text-align: center;
+    font-family: var(--medium);
+    font-size: 1.220em;
+    color: var(--azul);
+}
+
+.valores__lista {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9.5em;
+    padding-bottom: 5em;
+    gap: 4em 0;
+}
+
+.valores__val {
+
+    text-align: center;
+    font-size: 1.140em;
+    color: var(--azul);
+}
+
+.valores__val img {
+
+    width: 6em;
+    margin-bottom: 1em;
+}
+
+/*REGISTROS*/
+
+.registros {
+
+    padding: 6em 1.4em;
+    background-color: var(--azul);
+}
+
+.registros h3 {
+
+    position: relative;
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--blanco);
+}
+
+.registros h3::after {
+
+    content: "";
+    position: absolute;
+    display: block;
+    top: 2.3em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5.5em;
+    height: 0.090em;
+    background-color: var(--verde-claro);
+}
+
+.splide {
+
+    margin-top: 6em;
+}
+
+.splide__pagination {
+
+    display: none;
+}
+
+.splide__arrow {
+
+    background: transparent;
+}
+
+.splide__arrow svg {
+
+    fill: var(--azul);
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.splide__slide {
+
+    width: 24em !important;
+}
+
+.caja {
+
+    display: flex;
+    position: relative;
+    width: 21.4em;
+    height: 18.5em;
+    padding: 1.2em;
+    margin: 1em 0;
+    background-color: var(--blanco);
+}
+
+.caja__img {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doc__pop {
+
+    display: inline-block;
+    padding: 0.3em 0.8em;
+    border-radius: 0.4em;
+    font-size: 0.680em;
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+
+.caja__img img {
+
+    width: 4em;
+    margin-top: 1em;
+}
+
+.caja__doc {
+
+    margin-left: 1.4em;
+    font-size: 0.780em;
+}
+
+.caja__doc button {
+
+    position: absolute;
+    bottom: 1.5em;
+    border: none;
+    outline: none;
+    padding: 0.7em 2em;
+    font-size: 1.020em;
+    background-color: var(--verde);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.caja__doc button:hover {
+
+    background-color: var(--gris);
+}
+
+.caja__doc button i {
+
+    margin-left: 0.6em;
+}
+
+/*ORGANIGRAMA*/
+
+.organigrama {
+
+    padding: 6em 1.4em;
+}
+
+.organigrama h3 {
+
+    position: relative;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--verde);
+}
+
+.organigrama h3::after {
+
+    content: "";
+    position: absolute;
+    display: block;
+    top: 1.9em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.3em;
+    height: 0.090em;
+    background-color: var(--gris-claro);
+}
+
+.organigrama img {
+
+    margin-top: 6em;
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    
+    /*QUIENES SOMOS*/
+
+    .somos {
+
+        flex-direction: row;
+        padding: 6em 5em 6em 0;
+    }
+
+    .somos img {
+
+        max-width: 32em;
+    }
+
+    .somos__conten {
+
+        margin-left: 7em;
+        max-width: 35em;
+        height: 28em;
+        background-size: 14em;
+        font-size: 0.960em;
+    }
+
+    /*NUESTRA HISTORIA*/
+
+    .historia {
+
+        padding: 3em 1.4em 6em 1.4em;
+    }
+
+    .historia > h3 {
+
+        font-size: 1.6em;
+    }
+
+    .historia__conten {
+
+        margin: 8em auto 0 auto;
+        max-width: 50em;
+    }
+
+    .linea__circulo {
+
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2.2em;
+    }
+
+    .historia__conten::before {
+
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0.560em;
+    }
+
+    .historia__texto, .historia__img {
+
+        left: 0;
+        top: 0;
+    }
+
+    .historia__texto.izquierda {
+
+        left: -8%;
+    }
+
+    .historia__texto.derecha {
+
+        left: 52%;
+    }
+
+    .historia__texto {
+
+        width: 31em;
+        margin-top: 9.5em;
+    }
+
+    .historia__texto h3 {
+
+        font-size: 2.4em;
+    }
+
+    .historia__texto p {
+
+        font-size: 0.840em;
+        line-height: 1.5em;
+        width: 90%;
+    }
+
+    .historia__img.izquierda {
+
+        left: -8.5%;
+        margin-top: 22em;
+    }
+
+    .historia__img.derecha {
+
+        left: 50.5%;
+        margin-top: 1em;
+    }
+
+    .historia__img.derechaDos {
+
+        left: 50.5%;
+        margin-top: 48em;
+    }
+
+    .historia__img.izquierdaDos {
+
+        left: -8.5%;
+        margin-top: 74em;
+    }
+
+    .historia__img {
+
+        position: absolute;
+        width: 58%;
+        margin: 2em 0;
+    }
+
+    /*MISION, VISION Y VALORES*/
+
+    .valores {
+
+        padding: 8em 1.4em;
+    }
+
+    .valores__misvis {
+
+        flex-direction: row;
+        justify-content: center;
+        gap: 4em;
+    }
+
+    .mision, .vision {
+
+        width: 28em;
+        height: 18em;
+        padding: 5.5em 2em 2em 2em;
+    }
+
+    .mision p, .vision p {
+
+        font-size: 0.860em;
+    }
+
+    .valores__conten {
+
+        max-width: 60em;
+        margin: 4em auto 0 auto;
+        padding: 0 3em;
+    }
+
+    .valores__lista {
+
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 8.5em;
+        padding-bottom: 3em;
+        gap: 1.2em;
+    }
+
+    .valores__val {
+
+        width: 10em;
+        font-size: 1em;
+    }
+
+    .valores__val img {
+
+        width: 5.6em;
+    }
+
+    /*REGISTROS*/
+
+    .registros {
+
+        padding: 6em 1.4em 0.1em 1.4em;
+    }
+    
+    .registros h3 {
+
+        font-size: 1.5em;
+    }
+
+    .splide {
+
+        margin: 6em 1.3em 10em 1.3em;
+    }
+
+    .splide__track {
+
+        margin: 0 4em;
+    }
+
+    .splide__arrow svg {
+
+        fill: var(--blanco);
+    }
+
+    .caja {
+
+        width: 22.5em;
+    }
+
+    .caja__img img {
+
+        width: 4.5em;
+    }
+
+    /*ORGANIGRAMA*/
+
+    .organigrama {
+
+        padding: 6em;
+    }
+    
+    .organigrama h3 {
+
+        font-size: 1.6em;
+    }
+
+    .organigrama img {
+
+        max-width: 65em;
+        display: block;
+        margin: 6em auto 0 auto;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    
+    .somos img {
+
+        max-width: 36em;
+    }
+    
+    .somos__conten {
+
+        margin-left: 12em;
+        max-width: 40em;
+    }
+}
