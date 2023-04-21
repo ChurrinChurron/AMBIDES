@@ -106,7 +106,7 @@ input[type="radio"]:checked + label {
     margin-left: 1.6em;
     padding: 0.6em 2.5em;
     font-size: 0.920em;
-    background-color: var(--verde-oscuro);
+    background-color: var(--verde);
     color: var(--blanco);
     transition: .4s;
 }
@@ -118,7 +118,7 @@ input[type="radio"]:checked + label {
 
 .conten__preview a:hover {
 
-    background-color: var(--verde);
+    background-color: var(--verde-claro);
 }
 
 .noticia__linea {
@@ -267,7 +267,7 @@ input[type="radio"]:checked + label {
     transform: translateX(-50%);
     width: 5em;
     height: 0.1em;
-    background-color: var(--verde);
+    background-color: var(--verde-claro);
 }
 
 .otrasNotic__prev {
