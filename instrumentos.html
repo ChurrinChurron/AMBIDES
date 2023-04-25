@@ -10,12 +10,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2118f75376.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="src/css/general.css">
-    <link rel="stylesheet" href="src/css/proyectos.css">
-    <title>Nuestros Proyectos</title>
+    <link rel="stylesheet" href="src/css/expedientes.css">
+    <title>Instrumentos de Gestión Ambiental</title>
 </head>
-<body>
-    <header>
+<body id="fondoExp">
+    <header id="headerAlt">
         <nav>
             <h1><a href="index.html"><img src="assets/logo-header.svg" alt="logo AMBIDES"></a></h1>
             <div class="links__desktop">
@@ -81,135 +82,137 @@
                 </div>
             </div>
         </nav>
-        <p>Inicio / <span>Nuestros Proyectos</span></p>
-        <h2>Nuestros Proyectos</h2>
+        <p>Inicio / <span>Servicios / Instrumentos de Gestión Ambiental</span></p>
+        <h2>Instrumentos de Gestión Ambiental</h2>
     </header>
 
-    <main id="mainProy">
-        <section class="mapa">
-            <div class="mapa__texto">
-                <h3>Descubre nuestros <br/> proyectos</h3>
-                <p>Conoce nuestra experiencia en desarrollo de proyectos:</p>
-            </div>
-            <img src="assets/Proyectos/mapa.webp" alt="mapa">
-        </section>
-        <section class="proyectos">
-            <div class="proyectos__conten">
-                <p id="fechaProy">2017</p>
-                <div class="proyectos__lista">
-                    <div class="proyecto__datos">
-                        <img src="assets/Proyectos/imagen-proy.webp" alt="zona">
-                        <p>Consultoría para la Elaboración de los Estudios de Impacto Ambiental y Expedientes Técnicos de la Obra para las 
-                            Infraestructuras de Residuos Sólidos Rellenos Sanitarios y Rellenos de Seguridad en la Propiedad de la Empresa 
-                            Innova Ambiental S.A. en el Distrito Chilca.
-                        </p>
-                    </div>
-                    <div class="proyecto__datos">
-                        <img src="assets/Proyectos/imagen-proy.webp" alt="zona">
-                        <p>Consultoría para la Elaboración de los Estudios de Impacto Ambiental y Expedientes Técnicos de la Obra para las 
-                            Infraestructuras de Residuos Sólidos Rellenos Sanitarios y Rellenos de Seguridad en la Propiedad de la Empresa 
-                            Innova Ambiental S.A. en el Distrito Chilca.
-                        </p>
-                    </div>
-                    <div class="proyecto__datos">
-                        <img src="assets/Proyectos/imagen-proy.webp" alt="zona">
-                        <p>Consultoría para la Elaboración de los Estudios de Impacto Ambiental y Expedientes Técnicos de la Obra para las 
-                            Infraestructuras de Residuos Sólidos Rellenos Sanitarios y Rellenos de Seguridad en la Propiedad de la Empresa 
-                            Innova Ambiental S.A. en el Distrito Chilca.
-                        </p>
-                    </div>
-                    <div class="proyecto__datos">
-                        <img src="assets/Proyectos/imagen-proy.webp" alt="zona">
-                        <p>Consultoría para la Elaboración de los Estudios de Impacto Ambiental y Expedientes Técnicos de la Obra para las 
-                            Infraestructuras de Residuos Sólidos Rellenos Sanitarios y Rellenos de Seguridad en la Propiedad de la Empresa 
-                            Innova Ambiental S.A. en el Distrito Chilca.
-                        </p>
+    <main>
+        <section class="galeria">
+            <div class="expedGaleria__galeria">
+                <div class="galeria__conten">
+                    <div class="galeria__imagenes">
+                        <img src="assets/Expedientes/galeria-6.webp" id="ultimaImg" alt="AMBIDES">
+                        <img src="assets/Expedientes/galeria-1.webp" alt="AMBIDES">
+                        <img src="assets/Expedientes/galeria-2.webp" alt="AMBIDES">
+                        <img src="assets/Expedientes/galeria-3.webp" alt="AMBIDES">
+                        <img src="assets/Expedientes/galeria-4.webp" alt="AMBIDES">
+                        <img src="assets/Expedientes/galeria-5.webp" alt="AMBIDES">
+                        <img src="assets/Expedientes/galeria-6.webp" alt="AMBIDES">
+                        <img src="assets/Expedientes/galeria-1.webp" id="primeraImg" alt="AMBIDES">
                     </div>
                 </div>
-                <div class="proyecto__nav">
-                    <a href="#mainProy"><span>˄</span> Ir arriba</a>
-                    <ul class="numeros__nav">
-                        <li class="nav__flechas">˂</li>
-                        <li>Anterior</li>
-                        <li class="navActivo">1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>Siguiente</li>
-                        <li class="nav__flechas">˃</li>
+                <button id="btnIzq"><</button>
+                <button id="btnDer">></button>
+            </div>
+        </section>
+        <section class="realizar">
+            <h3>¿Qué realizamos?</h3>
+            <div class="realizar__conten">
+                <img src="assets/Expedientes/realizamos.webp" alt="AMBIDES">
+                <div class="realizar__lista">
+                    <ul>
+                        <li> <img src="assets/Expedientes/icono-check.svg" id="check" alt="check"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae aperiam laboriosam at odit illum
+                             temporibus placeat nostrum perspiciatis perferendis blanditiis.</li>
+                        <li> <img src="assets/Expedientes/icono-check.svg" id="check" alt="check"> Lorem ipsum dolor sit amet consectetur.</li>
+                        <li> <img src="assets/Expedientes/icono-check.svg" id="check" alt="check"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, harum?
+                        </li>
+                        <li> <img src="assets/Expedientes/icono-check.svg" id="check" alt="check"> Lorem ipsum dolor sit amet consectetur.</li>
                     </ul>
-                </div>
-            </div>
-            <div class="proyectos__filtro">
-                <div class="filtro__fecha" id="proyFechas">
-                    <h3><img src="assets/Proyectos/icono-filtro.svg" alt="filtro"> AÑOS:</h3>
-                    <div class="filtro__lista">
-                        <input type="radio" name="fechas" id="2017" checked>
-                        <label for="2017">2017 <span>></span></label>
-                        <input type="radio" name="fechas" id="2016">
-                        <label for="2016">2016 <span>></span></label>
-                        <input type="radio" name="fechas" id="2015">
-                        <label for="2015">2015 <span>></span></label>
-                        <input type="radio" name="fechas" id="2014">
-                        <label for="2014">2014 <span>></span></label>
-                        <input type="radio" name="fechas" id="2013">
-                        <label for="2013">2013 <span>></span></label>
-                        <input type="radio" name="fechas" id="2012">
-                        <label for="2012">2012 <span>></span></label>
-                        <input type="radio" name="fechas" id="2011">
-                        <label for="2011">2011 <span>></span></label>
-                        <input type="radio" name="fechas" id="2010">
-                        <label for="2010">2010 <span>></span></label>
-                    </div>
-                </div>
-                <div class="filtro__pais" id="proyPaises">
-                    <h3><img src="assets/Proyectos/icono-filtro.svg" alt="filtro"> PAIS:</h3>
-                    <div class="filtro__lista">
-                        <p id="selecPeru" class="opc__pais">Perú <span>v</span></p>
-                        <div class="filtro__ciudad" id="peruCiudad">
-                            <input type="radio" name="ciudades" id="ka" checked>
-                            <label for="ka">ka <span>></span></label>
-                            <input type="radio" name="ciudades" id="lima">
-                            <label for="lima">Lima <span>></span></label>
-                            <input type="radio" name="ciudades" id="lorem">
-                            <label for="lorem">Lorem <span>></span></label>
-                        </div>
-                        <p id="selecChile" class="opc__pais">Chile <span>v</span></p>
-                        <div class="filtro__ciudad" id="chileCiudad">
-                            <input type="radio" name="ciudades" id="santiago">
-                            <label for="santiago">Santiago <span>></span></label>
-                            <input type="radio" name="ciudades" id="aqua">
-                            <label for="aqua">aqua <span>></span></label>
-                            <input type="radio" name="ciudades" id="ipsum">
-                            <label for="ipsum">Ipsum <span>></span></label>
-                        </div>
-                        <p id="selecColom" class="opc__pais">Colombia <span>v</span></p>
-                        <div class="filtro__ciudad" id="colomCiudad">
-                            <input type="radio" name="ciudades" id="medellín">
-                            <label for="medellín">Medellín <span>></span></label>
-                            <input type="radio" name="ciudades" id="quit">
-                            <label for="quit">Quit <span>></span></label>
-                            <input type="radio" name="ciudades" id="lup">
-                            <label for="lup">Lup <span>></span></label>
-                        </div>
-                    </div>
+                    <a href="#">Mas información <i id="iconoFlecha" class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
         </section>
-        <section class="brochure">
-            <div class="brochure__texto">
-                <h3>Descarga nuestro <br/> Brochure</h3>
-                <p>y entérate de todos nuestros servicios</p>
-                <a href="#">Descárgalo aquí <i class="fa-solid fa-arrow-down"></i></a>
+        <section class="otrosServ">
+            <h3>Otros Servicios</h3>
+            <div class="splide">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <div class="tarjetas__conten">
+                                <img src="assets/servicio-1.webp" alt="servicios">
+                                <h4>Expedientes Técnicos</h4>
+                                <div class="tarjetas__texto">
+                                    <h4>Expedientes Técnicos</h4>
+                                    <p>Elaboración de Expedientes Técnicos, modelamiento de Infraestructuras, estudios especializados, tomografia 2D y 3D.</p>
+                                    <a href="expedientes.html">Ver más <i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="tarjetas__conten">
+                                <img src="assets/servicio-2.webp" alt="servicios">
+                                <h4>Fortalecimiento de capacidades</h4>
+                                <div class="tarjetas__texto">
+                                    <h4>Fortalecimiento de capacidades</h4>
+                                    <p>Capacitación y sensibilización, asesoría especializada, solución de conflictos Socio – Ambientales, cursos 
+                                        virtuales especializados.</p>
+                                    <a href="fortalecimiento.html">Ver más <i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="tarjetas__conten">
+                                <img src="assets/servicio-3.webp" alt="servicios">
+                                <h4>Instrumentos de Gestión Ambiental</h4>
+                                <div class="tarjetas__texto">
+                                    <h4>Instrumentos de Gestión Ambiental</h4>
+                                    <p>Desarrollo de instrumentos de gestión ambiental: políticas ambientales, planes nacionales, 
+                                        diagnósticos situacionales, entre otros.</p>
+                                    <a href="instrumentos.html">Ver más <i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="tarjetas__conten">
+                                <img src="assets/servicio-4.webp" alt="servicios">
+                                <h4>Proyectos de Inversión</h4>
+                                <div class="tarjetas__texto">
+                                    <h4>Proyectos de Inversión</h4>
+                                    <p>Formulación de proyectos de inversión pública y privada.</p>
+                                    <a href="inversion.html">Ver más <i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="tarjetas__conten">
+                                <img src="assets/servicio-5.webp" alt="servicios">
+                                <h4>Instrumentos Operativos</h4>
+                                <div class="tarjetas__texto">
+                                    <h4>Instrumentos Operativos</h4>
+                                    <p>Manual de operación, estructura de costos, rutas de barrido, rutas de recolección, indicadores 
+                                        de Gestión.
+                                    </p>
+                                    <a href="instrum_operat.html">Ver más <i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="tarjetas__conten">
+                                <img src="assets/servicio-6.webp" alt="servicios">
+                                <h4>Obtención de Autorizaciones</h4>
+                                <div class="tarjetas__texto">
+                                    <h4>Obtención de Autorizaciones</h4>
+                                    <p>Gestionamos la obtención de autorizaciones con las distintas entidades públicas para el desarollo 
+                                        de proyectos ambientales.
+                                    </p>
+                                    <a href="autorizacion.html">Ver más <i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="tarjetas__conten">
+                                <img src="assets/servicio-7.webp" alt="servicios">
+                                <h4>Supervisión de Obras Civiles</h4>
+                                <div class="tarjetas__texto">
+                                    <h4>Supervisión de Obras Civiles</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis doloribus</p>
+                                    <a href="supervision.html">Ver más <i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <img src="assets/brochure.webp" alt="AMBIDES">
-        </section>
-        <section class="memoria">
-            <div class="memoria__texto">
-                <h3>Descarga nuestra <br/>memoria institucional</h3>
-                <a href="#">Descárgala aquí <i class="fa-solid fa-arrow-right-long"></i></a>
-            </div>
-            <img src="assets/memoria.webp" alt="zona">
         </section>
     </main>
 
@@ -323,6 +326,9 @@
 <a href="#" class="whatsapp"><img src="assets/whatsapp.png" alt="whatsapp"></a>
 
 <script src="src/js/main.js"></script>
+<script src="src/js/galeria.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="src/js/splide.js"></script>
 
 </body>
 </html>
